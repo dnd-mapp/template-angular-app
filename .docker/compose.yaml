@@ -1,0 +1,13 @@
+name: template-angular-app
+services:
+    template-angular-app:
+        image: dndmapp/template-angular-app:latest
+        build:
+            context: ..
+            dockerfile: .docker/Dockerfile
+            tags:
+                - dndmapp/template-angular-app:latest
+        container_name: template-angular-app
+        restart: on-failure
+        ports:
+            - '4200:8080/tcp'

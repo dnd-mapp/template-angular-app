@@ -1,0 +1,27 @@
+name: CI
+description: Runs continuous integrations checks
+runs:
+    using: composite
+    steps:
+        - name: Set up tools
+          uses: ./.github/actions/setup-tools
+
+        - name: Check formatting
+          shell: bash
+          run: pnpm run format:check
+
+        - name: Check linting
+          shell: bash
+          run: |
+              pnpm run lint
+              pnpm run stylelint
+
+        - name: Compile app
+          shell: bash
+          run: pnpm run build
+
+        - name: Run tests
+          shell: bash
+          run: |
+              pnpm run playwright:install-browsers
+              pnpm run test
