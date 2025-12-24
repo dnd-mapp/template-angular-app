@@ -29,6 +29,13 @@ COPY --from=build /app/dist/template-angular-app/browser .
 
 COPY .docker/default.conf /etc/nginx/conf.d/default.conf
 
+COPY LICENSE /LICENSE
+
+LABEL org.opencontainers.image.title="template-angular-app" \
+      org.opencontainers.image.description="Template Angular application" \
+      org.opencontainers.image.source="https://github.com/dnd-mapp/template-angular-app" \
+      org.opencontainers.image.licenses="UNLICENSED"
+
 EXPOSE 8080
 
 CMD ["-g", "daemon off;"]

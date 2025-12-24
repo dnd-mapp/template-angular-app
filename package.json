@@ -2,6 +2,7 @@
   "name": "template-angular-app",
   "version": "0.0.0",
   "private": true,
+  "license": "UNLICENSED",
   "packageManager": "pnpm@10.26.0",
   "scripts": {
     "start": "pnpm exec ng serve",
