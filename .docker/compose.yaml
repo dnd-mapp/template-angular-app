@@ -1,12 +1,12 @@
 name: template-angular-app
 services:
     template-angular-app:
-        image: dndmapp/template-angular-app:latest
+        image: dndmapp/template-angular-app
         build:
             context: ..
             dockerfile: .docker/Dockerfile
             tags:
-                - dndmapp/template-angular-app:latest
+                - dndmapp/template-angular-app:local
         container_name: template-angular-app
         restart: on-failure
         ports:
