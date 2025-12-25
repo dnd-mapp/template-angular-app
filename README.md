@@ -8,6 +8,12 @@ By participating in this repository (creating issues, submitting pull requests, 
 
 Please read the full [Code of Conduct](./CODE_OF_CONDUCT.md) before contributing.
 
+## Contributing
+
+Contributions to `dnd-mapp/template-angular-app` are welcome.
+
+Please read the [Contributing guide](./CONTRIBUTING.md) for details on how to report issues, propose changes, and submit pull requests. By participating in this project, you also agree to follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
+
 ## License
 
 This project is **not licensed for reuse**.
