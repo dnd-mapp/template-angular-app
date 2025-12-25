@@ -7,6 +7,7 @@
   "scripts": {
     "start": "pnpm exec ng serve",
     "gen:version": "node build/write-version.mts",
+    "gen:certificates": "mkcert -cert-file cert.pem -key-file cert-key.pem localhost.template-angular-app.dndmapp.dev localhost 127.0.0.1",
     "build": "pnpm exec ng build",
     "build:dev": "pnpm exec ng build -c dev",
     "test": "pnpm exec vitest run",
