@@ -14,7 +14,7 @@
     "test:install-browsers": "pnpm exec playwright install chromium --with-deps",
     "test": "pnpm exec vitest run",
     "test:dev": "pnpm exec vitest --ui",
-    "test:coverage-reports": "pnpm exec vite preview --outDir ./reports --open",
+    "test:coverage-reports": "pnpm exec vite preview --outDir ./reports/unit-tests --open",
     "lint": "pnpm exec ng lint",
     "stylelint": "pnpm exec stylelint \"**/*.scss\"",
     "format:check": "pnpm exec prettier -l .",
