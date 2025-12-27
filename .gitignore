@@ -29,3 +29,5 @@ __screenshots__/
 Thumbs.db
 
 *.pem
+.env*
+!.env*.template
