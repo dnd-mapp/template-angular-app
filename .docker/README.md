@@ -2,7 +2,7 @@
 
 This image contains a production-style build of the **Template Angular app** from:
 
-- Source: https://github.com/dnd-mapp/template-angular-app
+- Source: <https://github.com/dnd-mapp/template-angular-app>
 - Image: `dndmapp/template-angular-app`
 
 It is primarily intended for:

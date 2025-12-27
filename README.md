@@ -7,7 +7,7 @@ This repository contains a preconfigured Angular application template used withi
 - A clean starting point for building new Angular applications
 
 > [!IMPORTANT]
-> This repository is provided for viewing only. It is not licensed for reuse. See [License](#License) for details.
+> This repository is provided for viewing only. It is not licensed for reuse. See [License](#license) for details.
 
 ---
 

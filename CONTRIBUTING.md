@@ -215,11 +215,13 @@ When submitting a pull request:
 2. **Make sure tests and checks pass**
     - Run relevant tests locally (Vitest and/or Playwright, as appropriate).
     - Run at least:
+
       ```bash
       pnpm lint
       pnpm stylelint
       pnpm format:check
       ```
+
     - Fix any issues reported by these tools.
 
 3. **Update documentation**
