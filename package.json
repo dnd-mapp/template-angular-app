@@ -28,7 +28,9 @@
     "docker:bake": "docker buildx bake -f .docker/docker-bake.hcl",
     "docker-compose:build": "docker compose -f .docker/compose.yaml build",
     "docker-compose:up": "docker compose -f .docker/compose.yaml up -d",
-    "docker-compose:down": "docker compose -f .docker/compose.yaml down"
+    "docker-compose:down": "docker compose -f .docker/compose.yaml down",
+    "release:update-changelog": "node scripts/update-changelog.mts",
+    "release:extract-changelog": "node scripts/extract-changelog-section.mts"
   },
   "dependencies": {
     "@angular/cdk": "~21.0.0",
