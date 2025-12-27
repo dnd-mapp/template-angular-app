@@ -84,11 +84,17 @@
                 "serve": {
                     "builder": "@angular/build:dev-server",
                     "options": {
-                        "buildTarget": "template-angular-app:build:development",
-                        "host": "localhost.template-angular-app.dndmapp.dev",
-                        "ssl": true,
-                        "sslCert": "cert.pem",
-                        "sslKey": "cert-key.pem"
+                        "buildTarget": "template-angular-app:build:development"
+                    },
+                    "defaultConfiguration": "https",
+                    "configurations": {
+                        "https": {
+                            "host": "localhost.template-angular-app.dndmapp.dev",
+                            "ssl": true,
+                            "sslCert": "cert.pem",
+                            "sslKey": "cert-key.pem"
+                        },
+                        "http": {}
                     }
                 },
                 "lint": {
