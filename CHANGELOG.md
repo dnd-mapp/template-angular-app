@@ -42,6 +42,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
     - Dependencies to run Playwright-based E2E tests.
     - Configuration to serve the application over HTTP to support browser-based E2E tests.
     - Move unit test report output to the `reports/` directory for easier CI collection.
+    - Tailwind CSS utility-first styling support and recommended Tailwind VS Code extension.
+    - VS Code run/debug configurations for common development tasks.
+    - Markdownlint configuration and rules for consistent Markdown formatting.
 
 ### Changed
 
@@ -56,7 +59,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 ### Fixed
 
-- N/A
+- Fix markdownlint errors reported by the new markdownlint configuration.
 
 ### Security
 
