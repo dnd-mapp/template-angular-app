@@ -1,9 +1,9 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="playwright:install-browsers" type="js.build_tools.npm" folderName="Testing" nameIsGenerated="true">
+  <configuration default="false" name="test:install-browsers" type="js.build_tools.npm" folderName="Testing">
     <package-json value="$PROJECT_DIR$/package.json" />
     <command value="run" />
     <scripts>
-      <script value="playwright:install-browsers" />
+      <script value="test:install-browsers" />
     </scripts>
     <node-interpreter value="project" />
     <envs />
