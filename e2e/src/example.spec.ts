@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-test('can load', async ({ page }) => {
+test('can load', { tag: ['@smoke'] }, async ({ page }) => {
     await page.goto('/');
 
     const element = page.getByText('AngularTemplate');
