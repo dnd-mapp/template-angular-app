@@ -1,7 +1,7 @@
 import { config } from '@dotenvx/dotenvx';
 import { defineConfig, devices, ReporterDescription } from '@playwright/test';
 
-config({ path: '.env.local' });
+config({ path: '.env.local', strict: false, ignore: ['MISSING_ENV_FILE'] });
 
 const isCI = Boolean(process.env['CI'] === 'true');
 
