@@ -8,20 +8,20 @@ runs:
 
         - name: Check formatting
           shell: bash
-          run: pnpm run format:check
+          run: pnpm format:check
 
         - name: Check linting
           shell: bash
           run: |
-              pnpm run lint
-              pnpm run stylelint
+              pnpm lint
+              pnpm stylelint
 
         - name: Compile app
           shell: bash
-          run: pnpm run build
+          run: pnpm build
 
         - name: Run tests
           shell: bash
           run: |
-              pnpm run playwright:install-browsers
-              pnpm run test
+              pnpm test:install-browsers
+              pnpm test
