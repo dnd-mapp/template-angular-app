@@ -52,7 +52,9 @@ jobs:
                   git config push.autoSetupRemote "true"
 
                   NEXT="$(pnpm version "$VERSION" --no-git-tag-version)"
+
                   pnpm gen:version
+                  pnpm release:update-changelog
 
                   echo "next=$NEXT" >> "$GITHUB_OUTPUT"
 
