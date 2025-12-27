@@ -15,6 +15,7 @@ runs:
           run: |
               pnpm lint
               pnpm stylelint
+              pnpm markdownlint
 
         - name: Compile app
           shell: bash
