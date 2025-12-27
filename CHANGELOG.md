@@ -37,6 +37,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
     - OnPush change detection for new components.
     - SCSS styling by default.
     - Type suffixes for directives, services, guards, interceptors, modules, pipes, and resolvers.
+    - End-to-end testing support using Playwright, including configuration and E2E test scripts.
+    - GitHub Actions workflow to run E2E smoke tests on pull requests.
+    - Dependencies to run Playwright-based E2E tests.
+    - Configuration to serve the application over HTTP to support browser-based E2E tests.
+    - Move unit test report output to the `reports/` directory for easier CI collection.
 
 ### Changed
 
@@ -44,6 +49,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 - Component selector style set to kebab-case.
 - Directive selector style set to camelCase.
 - pnpm configured as the project package manager (v10.26.2).
+- Adjusted test and CI scripts (renamed and updated calling scripts).
+- Updated README and Docker Compose tags for publishing to Docker Hub.
+- Updated VS Code configuration settings.
+- Pinned/adjusted pnpm project version setting.
 
 ### Fixed
 
@@ -51,7 +60,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 ### Security
 
-- N/A
+- Add SECURITY.md with vulnerability reporting procedures and guidance for reporters.
 
 ---
 
